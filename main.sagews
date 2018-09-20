@@ -154,7 +154,7 @@ def G_X_n(G):
                     H.add_edge(subset,listL[i])
    
     return H
-def automorphism(G,f1,f2,S):
+def bijection(G,f1,f2,S):
     """Extend the partial automorphism between two poor subgraphs of G to the full automorphism of G.
     
     Parameters
