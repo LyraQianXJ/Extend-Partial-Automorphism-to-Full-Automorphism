@@ -19,12 +19,18 @@ Input an uniform-degree-graph. It will output a graph in G(X,n) form (a special 
 G=Graph([(0,1),(1,2),(2,3),(3,0)])
 '''
 which looks like:
+![](input_uniform_G.svg)
 
-'''python
+With itself embedded in the output G(X,n) Graph (Blue is the orginal input):
+![](output_Gxn.svg)
+
+# bijection(G,f1,f2,S),
+Input G as a G(X,n) graph, f1 and f2 are two poor subgraphs of G, and S is the automorphosm between f1 and f2. Please make sure your input graph G has each of its vertex as the edge set of a uniform-degree graph. For example:
+
+  '''python
 Graph([(((0, 1), (0, 3)), ((0, 1), (1, 2))), (((0, 1), (0, 3)), ((0, 1), (2, 3))), (((0, 1), (0, 3)), ((0, 3), (1, 2))), \
     (((0, 1), (0, 3)), ((0, 3), (2, 3))), (((0, 1), (1, 2)), ((0, 1), (2, 3))), (((0, 1), (1, 2)), ((0, 3), (1, 2))), \
     (((0, 1), (1, 2)), ((1, 2), (2, 3))), (((0, 1), (2, 3)), ((0, 3), (2, 3))), (((0, 1), (2, 3)), ((1, 2), (2, 3))), \
     (((0, 3), (1, 2)), ((0, 3), (2, 3))), (((0, 3), (1, 2)), ((1, 2), (2, 3))), (((0, 3), (2, 3)), ((1, 2), (2, 3)))])
 '''
-  The third one is called bijection(G,f1,f2,S), where G is a G(X,n) graph, f1 and f2 are two poor subgraphs of G, and S is the automorphosm between f1 and f2. Please make sure your input graph G has each of its vertex as the edge set of a uniform-degree graph. The docstring gives an example of this. 
 To understant the mathematical terms used in this package, please refer to Milliet's paper "Extending partial ismorphisms of finite graphs" at (http://math.univ-lyon1.fr/~milliet/grapheanglais.pdf)
