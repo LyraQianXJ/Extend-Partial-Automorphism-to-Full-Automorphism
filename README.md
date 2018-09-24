@@ -19,9 +19,11 @@ Input an uniform-degree-graph. It will output a graph in G(X,n) form (a special 
 G=Graph([(0,1),(1,2),(2,3),(3,0)])
 '''
 which looks like:
+
 ![](input_uniform_G.svg)
 
 With itself embedded in the output G(X,n) Graph (Blue is the orginal input):
+
 ![](output_Gxn.svg)
 
 # bijection(G,f1,f2,S),
